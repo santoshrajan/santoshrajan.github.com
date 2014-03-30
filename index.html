@@ -54,7 +54,7 @@ a:hover {
     <a href="http://blog.santoshrajan.com/" target="_blank"><img src="blogger.png" title="Blogger"/></a>
     <a href="https://github.com/santoshrajan" target="_blank"><img src="github.png" title="Github"/></a>
     <a href="http://facebook.com/santosh.rajan" target="_blank"><img src="facebook.png" title="Facebook"/></a>
-    <a href="#"><img src="email.png" title="santrajan[at]gmail.com"/></a>
+    <a href="#" id="email"><img src="email.png" title="santrajan[at]gmail.com"/></a>
   </p>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -64,7 +64,12 @@ a:hover {
 
   ga('create', 'UA-8490402-8', 'santoshrajan.com');
   ga('send', 'pageview');
-
+</script>
+<script>
+document.querySelector("#email").addEventListener("click", function(e) {
+    alert("santrajan[at]gmail.com")
+    e.preventDefault()
+})
 </script>
 </body>
 </html>
